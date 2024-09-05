@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=com.jovisco -DartifactId=simple-one -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
