@@ -8,7 +8,9 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class App {
     public static void main(String[] args) {
+        var message = "hi josef!";
         System.out.println("Hi Josef!");
-        System.out.println(StringUtils.capitalize("hi Josef - capitalized!"));
+        System.out.println(StringUtils.capitalize(StringUtils.capitalize(message)));
+        System.out.println(StringUtils.capitalize(StringUtils.upperCase(message)));
     }
 }
