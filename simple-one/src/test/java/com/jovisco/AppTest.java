@@ -35,4 +35,17 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    public void testAll() {
+        System.out.println("TEST ALL");
+        System.out.flush();
+        assertTrue(true);
+    }
+
+    public void testAgain() {
+        System.out.println("TEST AGAIN");
+        System.out.flush();
+        assertTrue(true);
+    }
+
 }
