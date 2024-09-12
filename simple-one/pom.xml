@@ -19,6 +19,7 @@
     <surefire.version>3.5.0</surefire.version>
     <!--
     <skipTests>true</skipTests>
+    <skipITs>true</skipITs>
     -->
   </properties>
 
