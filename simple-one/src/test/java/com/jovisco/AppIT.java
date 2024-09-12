@@ -8,20 +8,17 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest {
-    /**
-     * Rigourous Test :-)
-     */
+public class AppIT {
     @Test
     public void testAll() {
-        System.out.println("TEST ALL");
+        System.out.println("*** Perform IT Test ***");
         System.out.flush();
         assertTrue(true);
     }
 
     @Test
     public void testAgain() {
-        System.out.println("TEST AGAIN");
+        System.out.println("IT Test AGAIN");
         System.out.flush();
         assertTrue(true);
     }
