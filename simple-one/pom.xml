@@ -51,6 +51,14 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+  <!-- https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine -->
+    <dependency>
+        <groupId>org.junit.vintage</groupId>
+        <artifactId>junit-vintage-engine</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+    </dependency>
+
   </dependencies>
 
   <build>
