@@ -17,16 +17,17 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <surefire.version>3.5.0</surefire.version>
+    <!--
+    <skipTests>true</skipTests>
+    -->
   </properties>
 
   <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>3.17.0</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
@@ -38,14 +39,12 @@
       <artifactId>mapstruct</artifactId>
       <version>${mapstruct.version}</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
