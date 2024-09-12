@@ -13,4 +13,8 @@ public class App {
         System.out.println(StringUtils.capitalize(StringUtils.capitalize(message)));
         System.out.println(StringUtils.capitalize(StringUtils.upperCase(message)));
     }
+
+    public String hi() {
+        return "Hi Josef, how are you?";
+    }
 }

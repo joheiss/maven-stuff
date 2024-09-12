@@ -48,4 +48,9 @@ public class AppTest
         assertTrue(true);
     }
 
+    public void testHi() {
+        var app = new App();
+        var result = app.hi();
+        assertEquals("Hi Josef, how are you?", result);
+    }
 }
