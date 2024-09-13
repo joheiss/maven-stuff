@@ -4,7 +4,7 @@
 
   <groupId>com.jovisco</groupId>
   <artifactId>multi-module</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>${revision}</version>
   
   <packaging>pom</packaging>
   <name>multi-module</name>
@@ -14,13 +14,46 @@
     <module>multi-mod-entities</module>
     <module>multi-mod-app</module>
     <module>web-api</module>
+    <module>web-app</module>
+    <module>web-converters</module>
   </modules>
   
   <properties>
+    <revision>1.0-SNAPSHOT</revision>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>22</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
   </properties>
+
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>flatten-maven-plugin</artifactId>
+        <configuration>
+          <flattenMode>bom</flattenMode>
+        </configuration>
+        <executions>
+          <!-- enable flattening -->
+          <execution>
+            <id>flatten</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>flatten</goal>
+            </goals>
+          </execution>
+          <!-- ensure proper cleanup -->
+          <execution>
+            <id>flatten.clean</id>
+            <phase>clean</phase>
+            <goals>
+              <goal>clean</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
