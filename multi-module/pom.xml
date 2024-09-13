@@ -12,6 +12,8 @@
 
   <modules>
     <module>multi-mod-entities</module>
+    <module>multi-mod-app</module>
+    <module>web-api</module>
   </modules>
   
   <properties>
