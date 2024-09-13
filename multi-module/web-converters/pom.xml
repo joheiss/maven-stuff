@@ -11,15 +11,10 @@
 
     <artifactId>web-converters</artifactId>
 
-    <properties>
-        <mapstruct.version>1.6.0</mapstruct.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <version>${mapstruct.version}</version>
         </dependency>
         <dependency>
             <groupId>com.jovisco</groupId>
